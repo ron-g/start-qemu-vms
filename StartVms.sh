@@ -10,10 +10,6 @@ STARTBOOL="${CONFFILE%/*}/startvms"
 LOGFILE="${LOGDIR}/${SCRNAME}.log"
 exec &>> "$LOGFILE"
 
-function TheDate {
-	printf "$(date +'%Y/%m/%d %H:%M:%S')"
-}
-
 function LogEntry {
 	printf "%s:\t%s\n" "$(date +'%Y/%m/%d %H:%M:%S')" "${1}"
 }
