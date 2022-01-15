@@ -1,0 +1,6 @@
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Before putting this into production, remove the '.cron' extension from this file and save to "/etc/cron.d/".
+
+@reboot		root	sleep 2m ; /scripts/StartTheseVms.sh
