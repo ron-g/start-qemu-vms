@@ -30,7 +30,8 @@ then
 	. "$CONFFILE"
 else
 	LogEntry "'$CONFFILE' doesn't exist. Fatal error!"
-	exit 1
+	printf '\n\n'
+	exit 2
 fi
 
 for each in ${VMS[@]}
